@@ -1,11 +1,11 @@
 # Naver_crawl_contents_comments_like
-네이버 뉴스에서 특정 언론사 하루치 기사의 제목, 날짜, 내용, 댓글, 좋아요, 싫어요 data를 수집합니다.
+네이버 뉴스에서 한 언론사의 하루치 뉴스의 제목, 날짜, 내용, 댓글, 좋아요, 싫어요 data를 수집합니다.
 
 
 ## Requirements
-bs4, selenium, webdriver(참고 : https://blog.pignu.kr/2018/03/26/naver_crawling.html)
+bs4, selenium, webdriver (참고 : https://blog.pignu.kr/2018/03/26/naver_crawling.html)
 
-chromedriver.exe가 같은 폴더에 있어야 합니다.
+chromedriver.exe가 같은 폴더에 있어야 합니다. 버전이 다를 수 있습니다.
 
 ## 실행 방법
 ```
@@ -25,11 +25,11 @@ json에는 url, 언론사, 날짜, 분류, 제목, 기사내용, 댓글, 공감�
 
 ## 참고
 
-- 스포츠와 연예 기사는 제외 했음. (구조가 다름)
+- 스포츠와 연예 기사는 제외 했음. 
 
 - 에러가 있는 기사는 넘어감.
           
-## 파일 읽는 예시 (encoding 해줘야 함.):
+## 파일 읽는 예시 (encoding 해줘야 함):
 
 ```
     with open('./한겨레/정치_한겨레_2019.07.28._넉달째맹탕국회…정치가없다.json', encoding = 'utf-8') as f:
