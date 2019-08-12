@@ -9,8 +9,11 @@ chromedriver.exe가 같은 폴더에 있어야 합니다. 버전이 다를 수 �
 
 ## 실행 방법
 ```
-python naver_news_crawling.py 100  # 댓글을 몇개나 크롤링할지 뒤에 인자에 넣어줍니다.
+python naver_news_crawling.py 5 0.2 100  # 페이지 수, 크롤링 속도, 댓글 수
 ```
+- 크롤링할 페이지 수(한 페이지에는 약 20개 기사가 있음.) 
+- 크롤링 속도 조절(0.1로 하면 에러나기도 함) 
+- 크롤링할 댓글 수
 
 https://news.naver.com/main/officeList.nhn
 
